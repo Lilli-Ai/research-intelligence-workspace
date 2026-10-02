@@ -1,0 +1,154 @@
+.portfolio-home {
+  min-height: 100vh;
+  background: #f8f8f3;
+  color: #172c30;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+.portfolio-home a:focus-visible { outline: 2px solid #0e8c86; outline-offset: 4px; }
+.portfolio-home main { width: min(100% - 88px, 1230px); margin: 0 auto; }
+.portfolio-site-header {
+  width: min(100% - 88px, 1230px);
+  min-height: 92px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  border-bottom: 1px solid #d8e2dc;
+}
+.portfolio-wordmark { display: inline-flex; align-items: center; gap: 12px; min-width: 235px; }
+.portfolio-monogram { display: grid; place-items: center; width: 45px; height: 45px; border-radius: 7px; background: #16383d; color: #f7fbf7; font: 600 19px "IBM Plex Mono", monospace; letter-spacing: -.13em; padding-right: 3px; }
+.portfolio-monogram span { color: #83d9bd; }
+.portfolio-wordmark > span:last-child { display: flex; flex-direction: column; gap: 2px; }
+.portfolio-wordmark strong { font-weight: 700; letter-spacing: -.02em; font-size: 17px; }
+.portfolio-wordmark small { color: #69847a; font: 500 10px "IBM Plex Mono",monospace; letter-spacing: .045em; }
+.portfolio-header-nav { display: flex; align-items: center; gap: 30px; }
+.portfolio-header-nav a { color: #586e65; font-size: 13px; font-weight: 600; white-space: nowrap; }
+.portfolio-header-nav a:hover, .portfolio-contact-actions > a:last-child:hover { color: #087169; }
+.portfolio-header-contact { display: inline-flex; align-items: center; gap: 8px; flex: none; padding: 11px 13px; border: 1px solid #bdd3c4; color: #0a7069; border-radius: 4px; font-size: 13px; font-weight: 700; }
+.portfolio-header-contact:hover { background: #e7f4eb; }
+.portfolio-hero { display: grid; grid-template-columns: minmax(0,1.45fr) minmax(315px,.8fr); margin-top: 32px; overflow: hidden; border-radius: 5px; background: #16383d; color: #f5fbf7; }
+.portfolio-hero-copy { padding: 53px 60px 43px; }
+.portfolio-eyebrow { color: #0b8178; font: 600 11px/1.45 "IBM Plex Mono",monospace; letter-spacing: .08em; }
+.portfolio-hero .portfolio-eyebrow { color: #a6dfc9; display: inline-flex; align-items: center; gap: 9px; }
+.portfolio-presence-dot { width: 7px; height: 7px; background: #80d7bd; border-radius: 50%; flex: none; }
+.portfolio-hero h1 { margin: 27px 0 19px; font: 400 clamp(36px,3.6vw,46px)/1.1 "Newsreader",Georgia,serif; letter-spacing: -.03em; }
+.portfolio-hero h1 span { display: block; margin-top: 7px; color: #a7e0c9; font: italic 400 clamp(31px,3.4vw,47px)/1.13 "Newsreader",Georgia,serif; letter-spacing: -.025em; }
+.portfolio-lede { max-width: 650px; color: #d0e1d7; font-size: 17px; line-height: 1.65; }
+.portfolio-hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 17px 24px; margin-top: 26px; }
+.portfolio-primary-action { display: inline-flex; align-items: center; justify-content: center; gap: 11px; padding: 12px 18px; background: #91dec0; color: #133c3b; border-radius: 4px; font-size: 14px; font-weight: 700; min-height: 46px; transition: transform .18s, background .18s; }
+.portfolio-primary-action:hover { background: #aceacf; transform: translateY(-2px); }
+.portfolio-quiet-action { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #effbf3; }
+.portfolio-quiet-action:hover { color: #91dec0; }
+.portfolio-credibility { display: flex; flex-wrap: wrap; gap: 8px 19px; border-top: 1px solid #42615c; margin-top: 38px; padding-top: 17px; color: #b9d5c7; font-size: 11px; }
+.portfolio-credibility span:before { content: "·"; margin-right: 8px; color: #75d0b2; }
+.portfolio-hero-aside { padding: 52px 40px 38px; background: #204b4b; display: flex; flex-direction: column; }
+.portfolio-aside-kicker, .portfolio-diagram-heading { color: #a4d5c1; font: 600 11px "IBM Plex Mono",monospace; letter-spacing: .08em; }
+.portfolio-aside-symbol { margin: 32px 0 29px; color: #c3ebd7; display: flex; gap: 8px; align-items: center; font: 400 45px/1 "IBM Plex Mono",monospace; }
+.portfolio-aside-symbol i { display: block; width: 16px; height: 16px; border-radius: 50%; background: #81d5b8; }
+.portfolio-hero-aside h2 { color: #f5fbf7; font: 400 32px/1.12 "Newsreader",Georgia,serif; margin: 0 0 12px; }
+.portfolio-hero-aside h2 em { color: #a2ddc6; }
+.portfolio-hero-aside p { color: #cadbd2; font-size: 14px; line-height: 1.65; }
+.portfolio-aside-capabilities { display: flex; flex-direction: column; gap: 13px; border-top: 1px solid #51716b; padding-top: 20px; margin-top: auto; }
+.portfolio-aside-capabilities span { display: flex; align-items: center; gap: 10px; color: #e0efe6; font-size: 12px; }
+.portfolio-aside-capabilities svg { color: #94dabf; }
+.portfolio-work-section { padding: 80px 0 65px; scroll-margin-top: 22px; }
+.portfolio-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 35px; margin-bottom: 25px; }
+.portfolio-section-heading h2, .portfolio-contact-section h2 { font: 400 clamp(34px,3.4vw,49px)/1.1 "Newsreader",Georgia,serif; letter-spacing: -.03em; margin: 13px 0 0; }
+.portfolio-section-heading p { max-width: 350px; color: #5c7469; font-size: 14px; line-height: 1.6; margin: 0; }
+.portfolio-project-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.portfolio-project-card { display: flex; flex-direction: column; padding: 28px 30px 26px; min-height: 375px; border: 1px solid #dce5dc; border-top: 3px solid #55b89f; background: #fff; transition: transform .18s, border-color .18s, box-shadow .18s; }
+.portfolio-project-card:hover { transform: translateY(-3px); border-color: #9ccab2; box-shadow: 0 12px 28px #1d4b3612; }
+.portfolio-project-agent { border-top-color: #4f7c7e; }
+.portfolio-project-voice { border-top-color: #bf9b5d; }
+.portfolio-project-intelligence { border-top-color: #7ca780; }
+.portfolio-project-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; color: #5b8b7b; font: 600 10px/1.5 "IBM Plex Mono",monospace; letter-spacing: .05em; }
+.portfolio-project-icon { display: grid; place-items: center; width: 39px; height: 39px; border-radius: 5px; background: #e9f4ec; color: #157e75; flex: none; }
+.portfolio-project-card h3 { font: 400 34px/1.1 "Newsreader",Georgia,serif; letter-spacing: -.02em; margin: 24px 0 10px; }
+.portfolio-project-headline { color: #264c48; font: 400 22px/1.32 "Newsreader",Georgia,serif; margin: 0 0 12px; }
+.portfolio-project-description { color: #5c7169; font-size: 14px; line-height: 1.62; margin: 0 0 19px; }
+.portfolio-project-stack { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: auto 0 20px; padding: 0; }
+.portfolio-project-stack li { padding: 5px 8px; background: #edf4ef; border: 1px solid #e0ebe3; color: #3c635a; border-radius: 3px; font: 500 11px "IBM Plex Mono",monospace; }
+.portfolio-project-link { align-self: flex-start; display: inline-flex; align-items: center; gap: 7px; color: #087169; font-size: 13px; font-weight: 700; }
+.portfolio-project-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.portfolio-project-note { color: #697d72; font-size: 12px; line-height: 1.6; margin: 16px 0 0; }
+.portfolio-featured { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(290px,.75fr); background: #ebf5ed; border: 1px solid #d2e3d5; scroll-margin-top: 24px; }
+.portfolio-featured-copy { padding: 49px 53px; }
+.portfolio-featured h2 { font: 400 clamp(33px,3.5vw,50px)/1.12 "Newsreader",Georgia,serif; letter-spacing: -.03em; margin: 18px 0 17px; }
+.portfolio-featured h2 span { display: block; font: italic 400 30px/1.18 "Newsreader",Georgia,serif; color: #257369; margin-top: 6px; }
+.portfolio-featured-copy p { max-width: 625px; color: #526d60; font-size: 15px; line-height: 1.68; }
+.portfolio-featured-action { display: inline-flex; align-items: center; gap: 10px; padding: 12px 17px; background: #16383d; color: #fff; border-radius: 4px; font-size: 14px; font-weight: 700; margin-top: 8px; }
+.portfolio-featured-action:hover { background: #0b6b64; }
+.portfolio-featured-status { display: flex; align-items: center; gap: 7px; color: #5e7969; font-size: 12px; margin-top: 17px; }
+.portfolio-featured-diagram { background: #194448; color: #eff8f0; padding: 39px 36px; display: flex; flex-direction: column; }
+.portfolio-featured-diagram > div { display: grid; grid-template-columns: 33px 1fr; gap: 2px 10px; padding: 18px 0; border-bottom: 1px solid #3b6966; }
+.portfolio-featured-diagram > div:first-of-type { margin-top: 15px; }
+.portfolio-featured-diagram > div > span { grid-row: span 2; color: #9fe2c9; font: 500 15px "IBM Plex Mono",monospace; }
+.portfolio-featured-diagram strong { font: 400 24px "Newsreader",Georgia,serif; }
+.portfolio-featured-diagram small { color: #b7d2c6; font-size: 12px; }
+.portfolio-contact-section { display: flex; align-items: center; justify-content: space-between; gap: 35px; padding: 72px 0 80px; }
+.portfolio-contact-section p { max-width: 590px; color: #5a7167; font-size: 15px; line-height: 1.65; margin: 12px 0 0; }
+.portfolio-contact-actions { display: flex; align-items: center; gap: 22px; flex: none; }
+.portfolio-contact-actions > a:last-child { display: inline-flex; align-items: center; gap: 5px; color: #1f6e65; font-weight: 700; font-size: 14px; }
+.portfolio-site-footer { display: flex; justify-content: space-between; gap: 20px; padding: 24px max(44px,calc((100vw - 1230px)/2)); background: #16383d; color: #c5dbd0; font-size: 12px; }
+.portfolio-site-footer a { display: inline-flex; gap: 5px; align-items: center; }
+.portfolio-site-footer a:hover { color: #91dec0; }
+
+@media (max-width: 1050px) {
+  .portfolio-home main, .portfolio-site-header { width: min(100% - 48px, 1230px); }
+  .portfolio-header-nav { gap: 16px; }
+  .portfolio-hero { grid-template-columns: minmax(0,1.4fr) minmax(270px,.7fr); }
+  .portfolio-hero-copy { padding: 41px 37px; }
+  .portfolio-hero-aside { padding: 41px 28px; }
+  .portfolio-hero h1 { font-size: 44px; }
+  .portfolio-hero h1 span { font-size: 38px; }
+  .portfolio-aside-symbol { margin: 23px 0; }
+}
+@media (max-width: 790px) {
+  .portfolio-site-header { min-height: 80px; }
+  .portfolio-header-nav { display: none; }
+  .portfolio-hero { grid-template-columns: 1fr; }
+  .portfolio-hero-aside { display: none; }
+  .portfolio-hero-copy { padding: 43px; }
+  .portfolio-work-section { padding-top: 60px; }
+  .portfolio-section-heading, .portfolio-contact-section { align-items: flex-start; flex-direction: column; }
+  .portfolio-project-grid { grid-template-columns: 1fr; }
+  .portfolio-project-card { min-height: 0; }
+  .portfolio-featured { grid-template-columns: 1fr; }
+  .portfolio-contact-section { padding: 55px 0 65px; }
+}
+@media (max-width: 520px) {
+  .portfolio-home main, .portfolio-site-header { width: calc(100% - 32px); }
+  .portfolio-site-header { min-height: 71px; gap: 12px; }
+  .portfolio-wordmark { min-width: 0; gap: 8px; }
+  .portfolio-monogram { width: 37px; height: 37px; font-size: 17px; }
+  .portfolio-wordmark strong { font-size: 14px; }
+  .portfolio-wordmark small { font-size: 8px; line-height: 1.3; }
+  .portfolio-header-contact { padding: 9px; font-size: 11px; }
+  .portfolio-header-contact svg { display: none; }
+  .portfolio-hero { margin-top: 16px; }
+  .portfolio-hero-copy { padding: 31px 22px 34px; }
+  .portfolio-hero .portfolio-eyebrow { font-size: 10px; }
+  .portfolio-hero h1 { font-size: 36px; margin: 22px 0 15px; }
+  .portfolio-hero h1 span { font-size: 33px; }
+  .portfolio-lede { font-size: 15px; line-height: 1.6; }
+  .portfolio-hero-actions { margin-top: 20px; gap: 15px; }
+  .portfolio-credibility { gap: 5px; flex-direction: column; margin-top: 26px; }
+  .portfolio-credibility span { font-size: 11px; }
+  .portfolio-work-section { padding: 47px 0 43px; }
+  .portfolio-section-heading { gap: 12px; margin-bottom: 20px; }
+  .portfolio-section-heading p { font-size: 13px; }
+  .portfolio-project-card { padding: 21px; }
+  .portfolio-project-card h3 { font-size: 30px; margin-top: 20px; }
+  .portfolio-project-headline { font-size: 21px; }
+  .portfolio-project-description { font-size: 14px; }
+  .portfolio-featured-copy { padding: 29px 22px; }
+  .portfolio-featured h2 { font-size: 34px; }
+  .portfolio-featured h2 span { font-size: 25px; }
+  .portfolio-featured-copy p { font-size: 14px; }
+  .portfolio-featured-diagram { padding: 28px 24px; }
+  .portfolio-contact-actions { flex-wrap: wrap; }
+  .portfolio-site-footer { padding: 23px 16px; flex-direction: column; gap: 9px; }
+}
